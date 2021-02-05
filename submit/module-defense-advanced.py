@@ -39,7 +39,7 @@ class Memory(object):
         self.memory[self.position] = Transition(*args)      
         self.position = (self.position + 1) % self.capacity 
 
-    def batch(self, batch_size):
+    def batch(self):
         return self.memory
     
     def __len__(self):
